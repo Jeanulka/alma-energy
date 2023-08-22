@@ -1,0 +1,435 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* arsenal-regular - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/arsenal-v12-cyrillic_latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* arsenal-700 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/arsenal-v12-cyrillic_latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Arsenal', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+    background-color: #F2F2F2;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+.title {
+    font-weight: 700px;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.slogan {
+    text-align: center;
+}
+
+
+/* Header styles start */
+
+.header {
+    background-color: #F2F2F2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 166px;
+}
+
+.header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.header__item {
+    margin-right: 87px;
+}
+
+.header__item:last-child {
+    margin-right: 0;
+}
+
+.header__link {
+    font-size: 24px;
+    line-height: auto;
+    color: #2F5597;
+    text-decoration: none;
+}
+
+.header__link:hover,
+.header__link:focus,
+.header__link:active {
+    color: #E1B090;
+}
+
+/* Header styles end */
+
+
+
+/* Intro styles start */
+
+.intro {
+    min-height: 990px;
+    background-size: cover;
+    align-content: center;
+}
+
+.intro__subtitle-1 {
+    padding-top: 200px;
+    color: black;
+    font-weight: 400px;
+    font-size: 24px;
+    width: 432px;
+    height: 36px;
+    margin: 0px auto;
+    margin-bottom: 24px;
+}
+
+.intro__title {
+    color: #2F5597;
+    font-weight: 700px;
+    font-size: 128px;
+    width: 971px;
+    height: 120px;
+    text-transform: uppercase;
+    margin: 0px auto;
+    margin-bottom: 48px;
+}
+
+.intro__subtitle-2 {
+    color: black;
+    font-weight: 400px;
+    font-size: 36px;
+    width: 648px;
+    height: 36px;
+    margin: 0px auto;
+    margin-bottom: 40px;
+}
+
+.intro__pic {
+    background: no-repeat center;
+    padding-bottom: 40px;
+}
+
+.intro__pic-author {
+    font-weight: 400px;
+    font-size: 10px;
+    color: #E1B090;
+    text-align: right;
+    margin-right: 30px;
+}
+
+/* Intro styles end */
+
+
+/* About us styles start */
+
+.about-us {
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.title {
+    padding: 96px 0px 84px 0px;
+}
+
+.container {
+    max-width: 1280px;
+    font-weight: 400px;
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    height: auto;
+    justify-content: space-between;
+    align-items: last-baseline;
+    margin-bottom: 68px;
+}
+
+.column {
+    width: 630px;
+    min-height: 1px;
+    flex: 0 0 48%;
+    justify-content: flex-end;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.row__images {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+.pic-author {
+    font-weight: 400px;
+    font-size: 10px;
+    color: #E1B090;
+    text-align: right;
+    margin-right: 30px;
+    margin-top: -20px;
+}
+
+.about-us__titel1 {
+    color: black;
+    text-align: center;
+    margin: 0px auto;
+    font-weight: 400px;
+    font-size: 32px;
+    padding-bottom: 28px;
+}
+
+.slogan {
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 172px;
+}
+
+.about-us__txt {
+    padding-bottom: 72px;
+}
+
+.about-us__pic {
+    margin-top: -40px;
+}
+
+/* About us styles end */
+
+
+/* Customer styles start */
+
+.customer__txt {
+    padding-bottom: 48px;
+}
+
+.customer__law-txt {
+    padding-bottom: 40px;
+}
+
+.law {
+    padding-bottom: 24px;
+}
+
+/* Benefits */
+
+.customer__benefits {
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 45px;
+}
+
+.benefits__wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 16px;
+}
+
+.benefits__card {
+    /* не робить тіні та зкруглення*/
+    height: 260px;
+    max-width: 416px;
+    box-sizing: border-box;
+
+    border-radius: 15px;
+    box-shadow: (0px 4px 4px black);
+    font-size: 32px;
+    text-align: center;
+}
+
+.benefits__card-pic {
+    line-height: 122px;
+    padding-left: 0px;
+}
+
+.benefits__card-title {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 122px;
+
+}
+
+
+/* Customer styles end */
