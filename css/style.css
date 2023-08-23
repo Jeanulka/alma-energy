@@ -164,14 +164,25 @@ html {
     box-sizing: inherit;
 }
 
+/* Основні кольори, також дивись в html розділ head > style */
+:root {
+    --background-color: #F2F2F2;
+    --primary-color: #2f5597;
+    --secondary-color: #e1b090;
+    --text-color: #000000;
+    --title-color: #000000;
+    /* --slogan-color:  #2f5597;  */
+}
+
+/* Основні стилі */
 body {
     font-family: 'Arsenal', sans-serif;
     font-style: normal;
     font-size: 16px;
     line-height: 1.2;
     font-weight: normal;
-    color: black;
-    background-color: #F2F2F2;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 .wrapper {
@@ -194,7 +205,7 @@ body {
 /* Header styles start */
 
 .header {
-    background-color: #F2F2F2;
+    background-color: var(--background-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -228,14 +239,18 @@ body {
 .header__link {
     font-size: 24px;
     line-height: auto;
-    color: #2F5597;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
 .header__link:hover,
 .header__link:focus,
 .header__link:active {
-    color: #E1B090;
+    color: var(--secondary-color);
+}
+
+.header__list .header__link.current {
+    color: var(--secondary-color);
 }
 
 /* Header styles end */
@@ -252,7 +267,7 @@ body {
 
 .intro__subtitle-1 {
     padding-top: 200px;
-    color: black;
+    color: var(--title-color);
     font-weight: 400px;
     font-size: 24px;
     width: 432px;
@@ -262,7 +277,7 @@ body {
 }
 
 .intro__title {
-    color: #2F5597;
+    color: var(--primary-color);
     font-weight: 700px;
     font-size: 128px;
     width: 971px;
@@ -273,7 +288,7 @@ body {
 }
 
 .intro__subtitle-2 {
-    color: black;
+    color: var(--title-color);
     font-weight: 400px;
     font-size: 36px;
     width: 648px;
@@ -290,7 +305,7 @@ body {
 .intro__pic-author {
     font-weight: 400px;
     font-size: 10px;
-    color: #E1B090;
+    color: var(--secondary-color);
     text-align: right;
     margin-right: 30px;
 }
@@ -345,14 +360,14 @@ body {
 .pic-author {
     font-weight: 400px;
     font-size: 10px;
-    color: #E1B090;
+    color: var(--secondary-color);
     text-align: right;
     margin-right: 30px;
     margin-top: -20px;
 }
 
-.about-us__titel1 {
-    color: black;
+.about-us__subtitel {
+    color: var(--title-color);
     text-align: center;
     margin: 0px auto;
     font-weight: 400px;
