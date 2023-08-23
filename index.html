@@ -68,7 +68,7 @@
 
     <main class="main">
       <!--Intro start-->
-      <section class="intro" id="intro">
+      <section class="intro">
         <div class="wrapper">
           <p class="intro__subtitle-1">
             Товариство з обмеженою відповідальністю
@@ -93,7 +93,7 @@
       <!--Intro end-->
 
       <!--About us start-->
-      <section class="about-us" id="about-us">
+      <section class="about-us">
         <div class="wrapper">
           <h2 class="title">
             <span class="colortext-1"> про нас </span>
@@ -212,12 +212,13 @@
               Приєднуйся. Отримуй переваги. Масштабуй бізнес
             </span>
           </p>
+          <button type="button" class="button">дізнатись більше</button>
         </div>
       </section>
       <!--About us end-->
 
       <!--Customer start-->
-      <section class="customer" id="customer">
+      <section class="customer">
         <div class="wrapper">
           <h2 class="title">
             <span class="colortext-1"> споживачу </span>
@@ -269,61 +270,7 @@
                 >Дбайливо до ресурсів - прибутково до результатів</span
               >
             </p>
-          </div>
-
-          <!-- customet text next -->
-          <div class="container">
-            <div class="row">
-              <div class="column">
-                <p class="customer__law-txt">
-                  Ми керуємося певним набором
-                  <span class="colortext">
-                    законодавчих та нормативних актів
-                  </span>
-                  у галузі енергетики. Основні з них завжди під рукою:
-                </p>
-                <ol class="customer__law">
-                  <li class="law">
-                    1. Постанова НКРЕКП від 14.03.2018 № 308 Про затвердження
-                    Правил ринку «на добу наперед» та внутрішньодобового ринку
-                  </li>
-                  <li class="law">
-                    2. Постанова НКРЕКП № 312 14.03.2018 року «Про затвердження
-                    Правил роздрібного ринку електричної енергії»
-                  </li>
-                  <li class="law">
-                    3. Постанова НКРЕКП від 14.03.2018 № 309 "Про затвердження
-                    Кодексу системи передачі"
-                  </li>
-                  <li class="law">
-                    4. Постанова НКРЕКП № 310 від 14.03.2018 року «Про
-                    затвердження Кодексу систем розподілу»
-                  </li>
-                </ol>
-              </div>
-              <div class="column">
-                <ol class="customer__txt">
-                  <li class="law">
-                    5. Постанова № 307 від 14703.2018 "Про затвердження Правил
-                    ринку"
-                  </li>
-                  <li class="law">
-                    6. Закон України «Про ринок електричної енергії»
-                  </li>
-                  <li class="law">
-                    7. Постанова НКРЕКП № 311 від 14.03.2018 року «Про
-                    затвердження Кодексу комерційного обліку електричної
-                    енергії»
-                  </li>
-                </ol>
-                <img
-                  src="./images/pen.png"
-                  alt="Photo by Je_Ane_Nok"
-                  height="320"
-                  width="630"
-                />
-              </div>
-            </div>
+            <button type="button" class="button">дізнатись більше</button>
           </div>
 
           <!-- benefits -->
@@ -390,7 +337,7 @@
     </main>
 
     <!-- Footer start -->
-    <footer class="contacts" id="contacts">
+    <footer class="footer">
       <h2 class="title">
         <span class="colortext-1"> контакти </span>
       </h2>
@@ -410,20 +357,53 @@
           АЛЬМА ЕНЕРДЖі
         </p>
       </div>
+      <!-- logo end -->
+
+      <!-- social start -->
+      <ul class="social">
+        <li class="social-item">
+          <a
+            class="social-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >Facebook</a
+          >
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >Telegram</a
+          >
+        </li>
+      </ul>
+      <!-- social end -->
+
+      <!-- extra info to contact -->
       <address>
         <ul class="footer_contacts">
           <li>
-            <p class="contacts_txt">
-              Центр обслуговування споживачів:
-              <span class="colortext"
-                >04071 м. Київ, вул. Хорива, 39-41, кв.45</span
-              >
-            </p>
+            <p class="contacts_txt">Центр обслуговування споживачів:</p>
+            <a
+              class="map"
+              href="https://goo.gl/maps/jFBmWuqrLRvSk8gB9"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              ><p>
+                <span class="colortext"
+                  >04071 м. Київ, вул. Хорива, 39-41, кв.45</span
+                >
+              </p>
+            </a>
 
             <a href="tel:+380938505844">
-              <span class="colortext">+38 093 850-58-44</span>
+              <p><span class="colortext">тел.: +38 093 850-58-44</span></p>
             </a>
           </li>
+
           <li>
             <p class="contacts_txt">
               Телефон відповідального за розв'язання спорів:
@@ -446,6 +426,8 @@
           </li>
         </ul>
       </address>
+      <!-- extra info to contact end-->
+
       <p>&#169; ТОВ «АЛЬМА ЕНЕРДЖІ», 2023</p>
     </footer>
     <!-- Footer end -->
