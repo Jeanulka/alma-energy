@@ -5,15 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Alma Energy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <style>
       .colortext-secondary {
         color: #e1b090; /* color */
         font-weight: 700; /* bold */
       }
-      .colortext {
-        font-weight: 700; /* bold */
-      }
+
       .colortext-primary {
         font-weight: 700; /* bold */
         color: #2f5597; /* color */
@@ -70,15 +83,11 @@
       <!--Intro start-->
       <section class="intro">
         <div class="wrapper">
-          <p class="intro__subtitle-1">
+          <h3 class="intro__subtitle-1">
             Товариство з обмеженою відповідальністю
-          </p>
-          <h1 class="intro__title">
-            <span class="colortext">АЛЬМА ЕНЕРДЖІ</span>
-          </h1>
-          <p class="intro__subtitle-2">
-            Часи змінюються - відносини залишаються
-          </p>
+          </h3>
+          <h1 class="intro__title">АЛЬМА ЕНЕРДЖІ</h1>
+          <h2 class="intro__slogan">Часи змінюються - відносини залишаються</h2>
           <div class="intro__pic">
             <img
               src="./images/dallas-reedy.png"
@@ -95,34 +104,28 @@
       <!--About us start-->
       <section class="about-us">
         <div class="wrapper">
-          <h2 class="title">
-            <span class="colortext"> про нас </span>
-          </h2>
+          <h2 class="title">про нас</h2>
 
           <!-- about us text -->
           <div class="container">
-            <div class="row">
+            <div class="row text">
               <div class="column">
                 <p>
                   Ми -
-                  <span class="colortext-secondary">
-                    постачальник електричної енергії,
-                  </span>
+                  <span class="colortext-secondary"
+                    >постачальник електричної енергії,</span
+                  >
+                  команда українських професіоналів, всі дії яких спрямовані на
+                  розвиток енергетичного сектору нашої держави та розбудову
+                  економіки вцілому.
                 </p>
-                <p>команда українських професіоналів,</p>
-                <p>всі дії яких спрямовані на розвиток</p>
-                <p>енергетичного сектору нашої держави</p>
-                <p>та розбудову економіки вцілому.</p>
               </div>
               <div class="column">
                 <p>
                   Наша <span class="colortext-secondary"> ціль </span> -
-                  забезпечити надійність
-                </p>
-                <p>та своєчасність постачання електричної енергії споживачу.</p>
-                <p>
-                  Ми змінюємося разом з вашими потребами, тому є досить гнучкими
-                  у співпраці.
+                  забезпечити надійність <br />та своєчасність постачання
+                  електричної енергії споживачу. <br />Ми змінюємося разом з
+                  вашими потребами, тому є досить гнучкими у співпраці.
                 </p>
               </div>
             </div>
@@ -134,11 +137,11 @@
               <div class="column">
                 <img
                   src="./images/2.png"
-                  alt="Photo by ___ on Unsplash"
+                  alt="Photo-by-Illiya-Vjestica-on-Unsplash"
                   width="630"
                   height="350"
                 />
-                <p class="pic-author">Photo by ___ on Unsplash</p>
+                <p class="pic-author">Photo by Illiya Vjestica on Unsplash</p>
               </div>
               <div class="column">
                 <img
@@ -164,6 +167,7 @@
 
           <!-- About us text next-->
           <div class="container">
+             <h2 class="title invisible">сфери нашої діяльності</h2>
             <div class="row">
               <div class="column">
                 <p class="about-us__txt">
@@ -180,7 +184,7 @@
                   </span>
                   з питань комерційної діяльності та керування підприємством.
                 </p>
-                <p class="about-us__txt">
+                <p class="about-us__txt-last">
                   Нас захоплюють спільні
                   <span class="colortext-secondary"> бізнес-проєкти </span> та
                   реалізація ідей щодо розвитку компаній різних галузей
@@ -189,15 +193,14 @@
                 </p>
               </div>
 
-              <div class="column">
-                <p class="about-us__txt">
+              <div class="column two">
+                <p class="about-us__txt-last">
                   Ми дуже задоволені, коли наші партнери можуть досягти бажаного
                   економічного ефекту та отримати
                   <span class="colortext-secondary">поштовх до розвитку</span>
                   завдяки нашій взаємодії. Це нас надихає та мотивує рухатись
                   далі.
                 </p>
-
                 <img
                   src="./images/mark-fletcher-brown.png"
                   alt="Photo by Mark Fletcher-Brown on Unsplash"
@@ -216,42 +219,32 @@
               Приєднуйся. Отримуй переваги. Масштабуй бізнес
             </span>
           </p>
-          <button type="button" class="button">Отримати консультацію</button>
-        </div>
-      </section>
-      <!--About us end-->
 
-      <!--Customer start-->
-      <section class="customer">
-        <div class="wrapper">
-          <h2 class="title">
-            <span class="colortext"> споживачу </span>
-          </h2>
+          <h2 class="title invisible">постачання електричної енергії</h2>
 
-          <!-- customet text -->
           <div class="container">
             <div class="row">
               <div class="column">
-                <p class="customer__txt">
+                <p class="about-us-next__txt">
                   Постачання (продаж) електричної енергії здійснюємо за
                   <span class="colortext-secondary">вільними цінами</span>.
                   Економічне обґрунтування ціни та алгоритм розрахунку фіксуємо
                   в комерційній пропозиції до договору з постачання.
                 </p>
-                <p class="customer__txt">
+                <p class="about-us-next__txt">
                   Умови співпраці обговорюємо
                   <span class="colortext-secondary">індивідуально</span>
                   до кожного споживача з огляду на галузь та сферу діяльності,
                   графік та обсяги споживання, умови оплати.
                 </p>
-                <p class="customer__txt">
+                <p class="about-us-next__txt">
                   Розглядаємо різні умови оплати: авансові платежі, планові
                   платежі, оплата по факту споживання. Графік платежів
                   обов’язково обговорюється та фіксується в договорі.
                 </p>
               </div>
-              <div class="column">
-                <p class="customer__txt">
+              <div class="column two">
+                <p class="about-us-next__txt">
                   <span class="colortext-secondary">
                     Ефективність діяльності
                   </span>
@@ -272,178 +265,112 @@
                   Photo by Vincent Tantardini on Unsplash
                 </p>
               </div>
-            </div>
-            <p class="slogan">
-              <span class="colortext-primary"
-                >Дбайливо до ресурсів - прибутково до результатів</span
-              >
-            </p>
-            <button type="button" class="button">дізнатись більше</button>
-          </div>
-
-          <!-- customet text next -->
-          <div class="container">
-            <div class="row">
-              <div class="column">
-                <p class="customer__law-txt">
-                  Ми керуємося певним набором
-                  <span class="colortext-secondary">
-                    законодавчих та нормативних актів
-                  </span>
-                  у галузі енергетики. Основні з них завжди під рукою:
-                </p>
-                <ol class="customer__law">
-                  <li class="law">
-                    1. Постанова НКРЕКП від 14.03.2018 № 308 Про затвердження
-                    Правил ринку «на добу наперед» та внутрішньодобового ринку
-                  </li>
-                  <li class="law">
-                    2. Постанова НКРЕКП № 312 14.03.2018 року «Про затвердження
-                    Правил роздрібного ринку електричної енергії»
-                  </li>
-                  <li class="law">
-                    3. Постанова НКРЕКП від 14.03.2018 № 309 "Про затвердження
-                    Кодексу системи передачі"
-                  </li>
-                  <li class="law">
-                    4. Постанова НКРЕКП № 310 від 14.03.2018 року «Про
-                    затвердження Кодексу систем розподілу»
-                  </li>
-                </ol>
-              </div>
-              <div class="column">
-                <ol class="customer__txt">
-                  <li class="law">
-                    5. Постанова № 307 від 14703.2018 "Про затвердження Правил
-                    ринку"
-                  </li>
-                  <li class="law">
-                    6. Закон України «Про ринок електричної енергії»
-                  </li>
-                  <li class="law">
-                    7. Постанова НКРЕКП № 311 від 14.03.2018 року «Про
-                    затвердження Кодексу комерційного обліку електричної
-                    енергії»
-                  </li>
-                </ol>
-                <img
-                  src="./images/pen.png"
-                  alt="Photo by Je_Ane_Nok"
-                  height="320"
-                  width="630"
-                />
-              </div>
-            </div>
-          </div>
-
-          <!-- benefits -->
-          <section class="customer__benefits">
-            <h2 class="title">
-              <span class="colortext"> наші переваги </span>
-            </h2>
-
-            <div class="benefits__wrap">
-              <div class="benefits__card">
-                <div class="benefits__card-pic">
-                  <img
-                    src="./icons/icon_muscle.svg"
-                    alt="stability"
-                    class="benefits__card-muscule"
-                  />
-                  <p class="benefits__card-title">
-                    <span class="colortext-primary">стабільність</span>
-                  </p>
-                </div>
-                <p class="benefits__card-descr">
-                  Поважаємо та бережемо кожного, надаючи якісне постачання
-                </p>
-              </div>
-
-              <div class="benefits__card">
-                <div class="benefits__card-pic">
-                  <img
-                    src="./icons/icon_newspaper-folding.svg"
-                    alt="flexibility"
-                    class="benefits__card-muscule"
-                  />
-                  <p class="benefits__card-title">
-                    <span class="colortext-primary"> гнучкість </span>
-                  </p>
-                </div>
-                <p class="benefits__card-descr">
-                  Здійснюємо уточнення графіків споживання та умов оплати за
-                  потреби клієнта
-                </p>
-              </div>
-
-              <div class="benefits__card">
-                <div class="benefits__card-pic">
-                  <img
-                    src="./icons/icon_user.svg"
-                    alt="support"
-                    class="benefits__card-muscule"
-                  />
-                  <p class="benefits__card-title">
-                    <span class="colortext-primary"> підтримка </span>
-                  </p>
-                </div>
-                <p class="benefits__card-descr">
-                  Надаємо консультаційні послуги, юридичний супровід, аналіз
-                  тарифів
-                </p>
-              </div>
-            </div>
-          </section>
+            </div>           
+          </div>     
+            <button type="button" class="button">Отримати консультацію</button>
         </div>
       </section>
-      <!-- Customer end -->
+      <!-- About us end -->
+
+      <!-- Benefits start -->
+      <section class="benefits">
+              <div class="wrapper">
+                <h2 class="title">наші переваги</h2>
+
+                <div class="benefits__wrap">
+                  <div class="benefits__card">
+                    <div class="benefits__card-pic">
+                      <img
+                        src="./icons/icon_muscle.svg"
+                        alt="stability"
+                        class="benefits__card-muscule"
+                      />
+                      <p class="benefits__card-title">
+                        <span class="colortext-primary">стабільність</span>
+                      </p>
+                    </div>
+                    <p class="benefits__card-descr">
+                      Поважаємо та бережемо кожного, надаючи якісне постачання
+                    </p>
+                  </div>
+
+                  <div class="benefits__card">
+                    <div class="benefits__card-pic">
+                      <img
+                        src="./icons/icon_newspaper-folding.svg"
+                        alt="flexibility"
+                        class="benefits__card-muscule"
+                      />
+                      <p class="benefits__card-title">
+                        <span class="colortext-primary"> гнучкість </span>
+                      </p>
+                    </div>
+                    <p class="benefits__card-descr">
+                      Здійснюємо уточнення графіків споживання та умов оплати за
+                      потреби клієнта
+                    </p>
+                  </div>
+
+                  <div class="benefits__card">
+                    <div class="benefits__card-pic">
+                      <img
+                        src="./icons/icon_user.svg"
+                        alt="support"
+                        class="benefits__card-muscule"
+                      />
+                      <p class="benefits__card-title">
+                        <span class="colortext-primary"> підтримка </span>
+                      </p>
+                    </div>
+                    <p class="benefits__card-descr">
+                      Надаємо консультаційні послуги, юридичний супровід, аналіз
+                      тарифів
+                    </p>
+                  </div>
+              </div>
+      </section>
+      <!--Benefits end-->
     </main>
 
     <!-- Footer start -->
     <footer class="footer">
-      <h2 class="title">
-        <span class="colortext"> контакти </span>
-      </h2>
-      <!-- logo -->
-      <div class="logo_group">
-        <a href="./index.html" aria-label="Логотип товариства">
-          <img
-            class="logo-pic"
-            src="./icons/alma-logo.svg"
-            alt="Логотип Альма-Енерджі"
-            width="205"
-            height="139"
-          />
-        </a>
-        <p class="logo_txt">
-          товариство з обмеженю відповідальністю <br />
-          АЛЬМА ЕНЕРДЖі
-        </p>
-      </div>
-      <!-- logo end -->
+      <div class="wrapper">
+        <h2 class="title">контакти</h2>
+        <!-- logo nav -->
+        <nav class="footer_nav">
+          <nav class="footer_nav_logo">  
+                <a href="./index.html" class="logo-pic" aria-label="Логотип товариства">
+                <img                  
+                  src="./icons/alma-logo.svg"
+                  alt="Логотип Альма-Енерджі"
+                  width="205"
+                  height="139"
+                />
+                </a>
+                <a href="./index.html" class="logo-txt" aria-label="Логотип товариства" >
+                  <span class="logo-txt-llc">товариство з обмеженю відповідальністю </span> <br />
+                  <span class="logo-txt-name">АЛЬМА ЕНЕРДЖі</span>
+                </a>
+          </nav>
+       
+          <ul class="footer_social_nav">
+            <li class="item"><a href="https://www.facebook.com" aria-label="Сторінка на фейбук"
+                target="_blank"
+                rel="noopener noreferrer nofollow">
+                <img src="./icons/facebook 1.svg" width="44" height="44"/>
+              </a>
+            </li>
+            <li class="item"><a href="https://mail.google.com/" aria-label="Сторінка поштового агента Google"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow">
+                  <img src="./icons/envelope.svg" width="44" height="44"/>
+                </a> 
+            </li>                
+          </ul>
+        </nav>
+        <!-- logo nav end -->
 
-      <!-- social start -->
-      <ul class="social">
-        <li class="social-item">
-          <a
-            class="social-link"
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            >Facebook</a
-          >
-        </li>
-        <li class="social-item">
-          <a
-            class="social-link"
-            href="https://web.telegram.org/"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            >Telegram</a
-          >
-        </li>
-      </ul>
-      <!-- social end -->
+   
 
       <!-- extra info to contact -->
       <address>
@@ -500,9 +427,9 @@
       <!-- extra info to contact end-->
 
       <p>
-        Всі права захищено &#169; ТОВ «АЛЬМА ЕНЕРДЖІ», 2023. Створено Жанною
-        Кудрицькою
-      </p>
+        Всі права захищено &#169; ТОВ «АЛЬМА ЕНЕРДЖІ», 2023. Created by Zhanna Kudrytska
+      </p></div>
+      
     </footer>
     <!-- Footer end -->
   </body>

@@ -1,170 +1,4 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-html {
-    height: 100%;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/* arsenal-regular - cyrillic_latin */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Arsenal', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/arsenal-v12-cyrillic_latin-regular.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* arsenal-700 - cyrillic_latin */
-@font-face {
-    font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Arsenal', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/arsenal-v12-cyrillic_latin-700.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-/* Основні кольори, також дивись в html розділ head > style */
+/* Основні кольори */
 :root {
     --background-color: #F2F2F2;
     --primary-color: #2f5597;
@@ -174,15 +8,38 @@ html {
     /* --slogan-color:  #2f5597;  */
 }
 
-/* Основні стилі */
+/* Основні стилі, також дивись в html розділ head>style */
 body {
     font-family: 'Arsenal', sans-serif;
-    font-style: normal;
     font-size: 16px;
     line-height: 1.2;
-    font-weight: normal;
     color: var(--text-color);
     background-color: var(--background-color);
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+br {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--primary-color);
 }
 
 .wrapper {
@@ -195,12 +52,33 @@ body {
     font-size: 32px;
     text-transform: uppercase;
     text-align: center;
+    padding: 164px 0px 84px 0px;
 }
 
-.slogan {
+.title.invisible {
+    padding: 0;
+    opacity: 0;
+}
+
+.button {
+    display: block;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 0 auto;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 36px;
     text-align: center;
+    cursor: pointer;
 }
 
+.button:hover,
+.button:focus,
+.button:active {
+    color: var(--primary-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 
 /* Header styles start */
 
@@ -240,7 +118,6 @@ body {
     font-size: 24px;
     line-height: auto;
     color: var(--primary-color);
-    text-decoration: none;
 }
 
 .header__link:hover,
@@ -266,40 +143,28 @@ body {
 }
 
 .intro__subtitle-1 {
-    padding-top: 200px;
+    padding-top: 220px;
     color: var(--title-color);
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 24px;
-    width: 432px;
-    height: 36px;
-    margin: 0px auto;
-    margin-bottom: 24px;
+    text-align: center;
+    padding-bottom: 24px;
 }
 
 .intro__title {
     color: var(--primary-color);
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 128px;
-    width: 971px;
-    height: 120px;
-    text-transform: uppercase;
-    margin: 0px auto;
-    margin-bottom: 48px;
+    text-align: center;
+    padding-bottom: 48px;
 }
 
-.intro__subtitle-2 {
+.intro__slogan {
     color: var(--title-color);
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 36px;
-    width: 648px;
-    height: 36px;
-    margin: 0px auto;
-    margin-bottom: 40px;
-}
-
-.intro__pic {
-    background: no-repeat center;
-    padding-bottom: 40px;
+    text-align: center;
+    padding-bottom: 50px;
 }
 
 .intro__pic-author {
@@ -307,7 +172,7 @@ body {
     font-size: 10px;
     color: var(--secondary-color);
     text-align: right;
-    margin-right: 30px;
+    padding-right: 30px;
 }
 
 /* Intro styles end */
@@ -320,25 +185,16 @@ body {
     background-size: cover;
 }
 
-.title {
-    padding: 96px 0px 84px 0px;
-}
-
 .container {
-    max-width: 1280px;
     font-weight: 400px;
     font-size: 32px;
-    margin-bottom: 60px;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1280px;
-    height: auto;
     justify-content: space-between;
-    align-items: last-baseline;
-    margin-bottom: 68px;
+    padding-bottom: 68px;
 }
 
 .column {
@@ -353,23 +209,21 @@ body {
 .row__images {
     display: flex;
     flex-wrap: wrap;
-
     justify-content: space-between;
 }
 
 .pic-author {
-    font-weight: 400px;
     font-size: 10px;
     color: var(--secondary-color);
     text-align: right;
-    margin-right: 30px;
     margin-top: -20px;
+    padding-right: 30px;
+    padding-bottom: 42px;
 }
 
 .about-us__subtitel {
     color: var(--title-color);
     text-align: center;
-    margin: 0px auto;
     font-weight: 400px;
     font-size: 32px;
     padding-bottom: 28px;
@@ -377,43 +231,71 @@ body {
 
 .slogan {
     text-align: center;
-    margin: 0px auto;
-    margin-bottom: 172px;
+    padding-bottom: 172px;
 }
 
 .about-us__txt {
     padding-bottom: 72px;
 }
 
-.about-us__pic {
-    margin-top: -40px;
+.about-us-next__txt {
+    padding-bottom: 48px;
+}
+
+.about-us__txt-last {
+    padding-bottom: 36px;
+}
+
+.column.two>.pic-author {
+    padding-bottom: 0;
 }
 
 /* About us styles end */
 
 
+/* <p>Приклад використання атрибуту 'form'</p>
+<form id="data"></form>
+<p><input placeholder="Ваше ім'я" name="user" form="data"></p>
+<p><input placeholder="Прізвище" name="user" form="data"></p>
+<p><input placeholder="Ваше повідомлення" name="user" form="data"></p>
+<p><button>Надіслати</button></p> */
+
+
+
+
 /* Customer styles start */
+.customer .title {
+    opacity: 0;
+}
 
 .customer__txt {
     padding-bottom: 48px;
+}
+
+.container-with-button {
+    padding-bottom: 172px;
 }
 
 .customer__law-txt {
     padding-bottom: 40px;
 }
 
-.law {
+.customer__law-list {
+    padding: 0;
+    margin: 0;
+}
+
+.law-item {
     padding-bottom: 24px;
 }
 
-/* Benefits */
+/* Customer styles end */
 
-.customer__benefits {
+
+/* Benefits start */
+
+.benefits {
     background-size: cover;
-}
-
-.title {
-    margin-bottom: 45px;
 }
 
 .benefits__wrap {
@@ -423,28 +305,57 @@ body {
 }
 
 .benefits__card {
-    /* не робить тіні та зкруглення*/
-    height: 260px;
-    max-width: 416px;
-    box-sizing: border-box;
-
+    border: 1px solid transparent;
     border-radius: 15px;
-    box-shadow: (0px 4px 4px black);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px 12px;
     font-size: 32px;
     text-align: center;
 }
 
-.benefits__card-pic {
-    line-height: 122px;
-    padding-left: 0px;
-}
-
 .benefits__card-title {
     display: inline-block;
-    vertical-align: middle;
-    line-height: 122px;
-
+    line-height: 3.38;
 }
 
+/* Benefits end */
 
-/* Customer styles end */
+
+/* Footer style start */
+.footer_nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_nav_logo {
+    display: flex;
+}
+
+.logo-txt {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-top: 24px;
+    margin-left: 28px;
+    line-height: 0.9;
+}
+
+.logo-txt-llc {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.logo-txt-name {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.footer_social_nav {
+    display: flex;
+    align-items: center;
+}
+
+.footer_social_nav .item:not(:last-child) {
+    margin-right: 20px;
+}
