@@ -38,6 +38,10 @@ a {
     text-decoration: none;
 }
 
+address {
+    font-style: normal;
+}
+
 a:visited {
     color: var(--primary-color);
 }
@@ -60,12 +64,18 @@ a:visited {
     opacity: 0;
 }
 
+.title.current-page {
+    color: transparent;
+}
+
 .button {
     display: block;
     border: 1px solid transparent;
     border-radius: 10px;
     padding: 10px 15px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
     font-weight: 700;
     color: var(--primary-color);
     font-size: 36px;
@@ -165,6 +175,10 @@ a:visited {
     font-size: 36px;
     text-align: center;
     padding-bottom: 50px;
+}
+
+.intro__pic {
+    display: block;
 }
 
 .intro__pic-author {
@@ -296,6 +310,7 @@ a:visited {
 
 .benefits {
     background-size: cover;
+    margin-bottom: 164px;
 }
 
 .benefits__wrap {
@@ -322,15 +337,18 @@ a:visited {
 
 
 /* Footer style start */
-.footer_nav {
+
+
+.footer__nav {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 32px;
 }
 
-.footer_nav_logo {
+.footer__nav-logo {
     display: flex;
+    justify-content: flex-start;
 }
 
 .logo-txt {
@@ -351,11 +369,55 @@ a:visited {
     font-weight: 700;
 }
 
-.footer_social_nav {
+.footer__social-nav {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     align-items: center;
 }
 
-.footer_social_nav .item:not(:last-child) {
+.footer__social-nav .item:not(:last-child) {
     margin-right: 20px;
+}
+
+.footer__address {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 16px;
+}
+
+.footer__contacts-left,
+.footer__contacts-right,
+.footer__contacts-txt-address {
+    font-size: 24px;
+    text-align: center;
+}
+
+.footer__contacts-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.footer__address {
+    margin-bottom: 68px;
+}
+
+.footer__all-right-reserved {
+    text-align: center;
+    margin-bottom: 15px;
+
+    /* Footer style end */
+}
+
+.map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.footer__contacts-txt-address {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+
 }

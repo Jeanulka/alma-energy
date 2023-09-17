@@ -88,9 +88,9 @@
           </h3>
           <h1 class="intro__title">АЛЬМА ЕНЕРДЖІ</h1>
           <h2 class="intro__slogan">Часи змінюються - відносини залишаються</h2>
-          <div class="intro__pic">
+          <div>
             <img
-              src="./images/dallas-reedy.png"
+              class="intro__pic" src="./images/dallas-reedy.png"
               alt="Photo by Dallas Reedy on Unsplash"
               height="512"
               width="1280"
@@ -335,12 +335,12 @@
     <!-- Footer start -->
     <footer class="footer">
       <div class="wrapper">
-        <h2 class="title">контакти</h2>
+        <h2 class="title invisible">контакти</h2>
         <!-- logo nav -->
-        <nav class="footer_nav">
-          <nav class="footer_nav_logo">  
-                <a href="./index.html" class="logo-pic" aria-label="Логотип товариства">
-                <img                  
+        <div class="footer__nav">
+          <div class="footer__nav-logo">  
+                <a href="./index.html" aria-label="Логотип товариства">
+                <img class="logo-pic"               
                   src="./icons/alma-logo.svg"
                   alt="Логотип Альма-Енерджі"
                   width="205"
@@ -351,32 +351,32 @@
                   <span class="logo-txt-llc">товариство з обмеженю відповідальністю </span> <br />
                   <span class="logo-txt-name">АЛЬМА ЕНЕРДЖі</span>
                 </a>
-          </nav>
+          </div>
        
-          <ul class="footer_social_nav">
-            <li class="item"><a href="https://www.facebook.com" aria-label="Сторінка на фейбук"
-                target="_blank"
-                rel="noopener noreferrer nofollow">
-                <img src="./icons/facebook 1.svg" width="44" height="44"/>
-              </a>
-            </li>
-            <li class="item"><a href="https://mail.google.com/" aria-label="Сторінка поштового агента Google"
+            <ul class="footer__social-nav">
+              <li class="item"><a href="https://www.facebook.com" aria-label="Сторінка на фейбук"
                   target="_blank"
                   rel="noopener noreferrer nofollow">
-                  <img src="./icons/envelope.svg" width="44" height="44"/>
-                </a> 
-            </li>                
-          </ul>
-        </nav>
+                  <img src="./icons/facebook 1.svg" width="44" height="44"/>
+                </a>
+              </li>
+              <li class="item"><a href="https://mail.google.com/" aria-label="Сторінка поштового агента Google"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow">
+                    <img src="./icons/envelope.svg" width="44" height="44"/>
+                  </a> 
+              </li>                
+            </ul>
+        </div>
         <!-- logo nav end -->
 
    
 
       <!-- extra info to contact -->
-      <address>
-        <ul class="footer_contacts">
-          <li>
-            <p class="contacts_txt">Центр обслуговування споживачів:</p>
+      <address class="footer__address">
+        <ul class="footer__contacts-left">
+          <li class="footer__contacts-item">
+            <p class="footer__contacts-txt">Центр обслуговування споживачів:</p>
             <a
               class="link"
               href="https://goo.gl/maps/jFBmWuqrLRvSk8gB9"
@@ -395,18 +395,20 @@
               </p>
             </a>
           </li>
-
-          <li>
-            <p class="contacts_txt">
+          <li class="footer__contacts-item">
+            <p class="footer__contacts-txt">
               Телефон відповідального за розв'язання спорів:
             </p>
             <a class="link" href="tel:+380938505844" title="Телефон">
               <span class="colortext-secondary">+38 093 850-58-44</span>
             </a>
           </li>
+        </ul>
 
-          <li>
-            <p class="contacts_txt">Електронна пошта для повідомлень:</p>
+        <ul class="footer__contacts-right">         
+
+          <li class="footer__contacts-item">
+            <p class="footer__contacts-txt">Електронна пошта для повідомлень:</p>
             <a
               class="link"
               href="mailto:alma.energy.llc@gmail.com"
@@ -416,8 +418,8 @@
             </a>
           </li>
 
-          <li>
-            <p class="contacts_txt">
+          <li class="footer__contacts-item">
+            <p class="footer__contacts-txt">
               Робочі дні: Пн-Пт з 09:00 до 18:00. <br />
               Вихідні дні: <span class="colortext-secondary">Сб, Нд</span>
             </p>
@@ -426,9 +428,10 @@
       </address>
       <!-- extra info to contact end-->
 
-      <p>
+      <p class="footer__all-right-reserved">
         Всі права захищено &#169; ТОВ «АЛЬМА ЕНЕРДЖІ», 2023. Created by Zhanna Kudrytska
-      </p></div>
+      </p>
+    </div>
       
     </footer>
     <!-- Footer end -->
