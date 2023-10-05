@@ -58,14 +58,14 @@
               <li class="header__item">
                 <a href="./index.html" class="header__link current">ГОЛОВНА</a>
               </li>
-              <li class="header__item">
-                <a href="./about_us.html" class="header__link">ПРО НАС</a>
-              </li>
+              <!-- <li class="header__item">
+                <a href="#about-us" class="header__link">ПРО НАС</a>
+              </li> -->
               <li class="header__item">
                 <a href="./customer.html" class="header__link">СПОЖИВАЧУ</a>
               </li>
               <li class="header__item">
-                <a href="./footer.html" class="header__link">КОНТАКТИ</a>
+                <a href="./find-us.html" class="header__link">КОНТАКТИ</a>
               </li>
               <li class="header__item">
                 <a href="tel:+380938505844" class="header__link">
@@ -83,93 +83,78 @@
       <!--Intro start-->
       <section class="intro">
         <div class="wrapper">
+
           <h3 class="intro__subtitle-1">
             Товариство з обмеженою відповідальністю
           </h3>
           <h1 class="intro__title">АЛЬМА ЕНЕРДЖІ</h1>
           <h2 class="intro__slogan">Часи змінюються - відносини залишаються</h2>
-          <div>
-            <img
-              class="intro__pic" src="./images/dallas-reedy.png"
-              alt="Photo by Dallas Reedy on Unsplash"
-              height="512"
-              width="1280"
-            />
-            <p class="intro__pic-author">Photo by Dallas Reedy on Unsplash</p>
-          </div>
+          <img class="intro__pic" width="1280" src="./images/dallas-reedy.jpg" alt="Лампа"
+          />
+          <p class="intro__pic-author">Photo by Dallas Reedy on Unsplash</p>
+        
         </div>
+
       </section>
       <!--Intro end-->
 
       <!--About us start-->
       <section class="about-us">
         <div class="wrapper">
-          <h2 class="title">про нас</h2>
+          <h2 id="about-us" class="title visually-hidden">про нас</h2>
 
           <!-- about us text -->
-          <div class="container">
-            <div class="row text">
-              <div class="column">
-                <p>
-                  Ми -
-                  <span class="colortext-secondary"
-                    >постачальник електричної енергії,</span
-                  >
-                  команда українських професіоналів, всі дії яких спрямовані на
-                  розвиток енергетичного сектору нашої держави та розбудову
-                  економіки вцілому.
-                </p>
-              </div>
-              <div class="column">
-                <p>
-                  Наша <span class="colortext-secondary"> ціль </span> -
-                  забезпечити надійність <br />та своєчасність постачання
-                  електричної енергії споживачу. <br />Ми змінюємося разом з
-                  вашими потребами, тому є досить гнучкими у співпраці.
-                </p>
-              </div>
-            </div>
+          <div class="about-us__container">
+            <ul class="about-us__list">
+                        <li class="about-us__list-item">
+                          <p class="about-us__txt">
+                              Ми -
+                              <span class="colortext-secondary"
+                                >постачальник електричної енергії,</span
+                              >
+                              команда українських професіоналів, всі дії яких спрямовані на
+                              розвиток енергетичного сектору нашої держави та розбудову
+                              економіки вцілому.
+                            </p>
+                          <img class="about-us__images"
+                              src="./images/2.png"
+                              alt="Photo-by-Illiya-Vjestica-on-Unsplash"
+                              width="630"
+                              height="350"
+                          />
+                          <p class="pic-author">Photo by Illiya Vjestica on Unsplash</p></li>
+                        <li class="about-us__list-item">
+                          <p class="about-us__txt">
+                              Наша <span class="colortext-secondary"> ціль </span> -
+                              забезпечити надійність та своєчасність постачання
+                              електричної енергії споживачу. Ми змінюємося разом з
+                              вашими потребами, тому є досить гнучкими у співпраці.
+                          </p>
+                          <img class="about-us__images"
+                              src="./images/kraken.png"
+                              alt="Photo-by-Krakenimages-on-Unsplash"
+                              width="630"
+                              height="350"
+                          />
+                          <p class="pic-author">Photo by Krakenimages on Unsplash</p>
+                        </li>
+                      </ul>  
+                      <p class="about-us__subtitel">
+                        Ми вибудовуємо довготривалі стосунки з парнерами, саме тому наше
+                        гасло:
+                      </p>
+                      <p class="slogan">
+                        <span class="colortext-primary">
+                          Часи змінюються - відносини залишаються
+                        </span>
+                      </p>
           </div>
 
-          <!-- about us pic -->
-          <div class="container">
-            <div class="row__images">
-              <div class="column">
-                <img
-                  src="./images/2.png"
-                  alt="Photo-by-Illiya-Vjestica-on-Unsplash"
-                  width="630"
-                  height="350"
-                />
-                <p class="pic-author">Photo by Illiya Vjestica on Unsplash</p>
-              </div>
-              <div class="column">
-                <img
-                  src="./images/kraken.png"
-                  alt="Photo-by-Krakenimages-on-Unsplash"
-                  width="630"
-                  height="350"
-                />
-                <p class="pic-author">Photo by Krakenimages on Unsplash</p>
-              </div>
-            </div>
-          </div>
+          <h2 class="title visually-hidden">сфери діяльності</h2>
 
-          <p class="about-us__subtitel">
-            Ми вибудовуємо довготривалі стосунки з парнерами, саме тому наше
-            гасло:
-          </p>
-          <p class="slogan">
-            <span class="colortext-primary">
-              Часи змінюються - відносини залишаються
-            </span>
-          </p>
-
-          <!-- About us text next-->
-          <div class="container">
-             <h2 class="title invisible">сфери нашої діяльності</h2>
-            <div class="row">
-              <div class="column">
+          <div class="about-us__container">
+            <ul class="about-us__list">
+              <li class="about-us__list-item"> 
                 <p class="about-us__txt">
                   Ми постачаємо
                   <span class="colortext-secondary"> електричну енергію </span>
@@ -182,24 +167,23 @@
                   <span class="colortext-secondary">
                     консультаційні послуги
                   </span>
-                  з питань комерційної діяльності та керування підприємством.
+                  з питань комерційної діяльності та керування підприємством.                     
                 </p>
-                <p class="about-us__txt-last">
-                  Нас захоплюють спільні
+                <p class="about-us__txt last">
+                     Ми дуже задоволені, коли наші партнери можуть досягти бажаного
+                  економічного ефекту та отримати
+                  <span class="colortext-secondary">поштовх до розвитку</span>
+                  завдяки нашій взаємодії. Це нас надихає та мотивує рухатись
+                  далі.           
+                </p>
+              </li>
+              <li class="about-us__list-item">
+                <p class="about-us__txt">
+                   Нас захоплюють спільні
                   <span class="colortext-secondary"> бізнес-проєкти </span> та
                   реалізація ідей щодо розвитку компаній різних галузей
                   економіки у відповідності до мінливості зовнішнього
                   середовища.
-                </p>
-              </div>
-
-              <div class="column two">
-                <p class="about-us__txt-last">
-                  Ми дуже задоволені, коли наші партнери можуть досягти бажаного
-                  економічного ефекту та отримати
-                  <span class="colortext-secondary">поштовх до розвитку</span>
-                  завдяки нашій взаємодії. Це нас надихає та мотивує рухатись
-                  далі.
                 </p>
                 <img
                   src="./images/mark-fletcher-brown.png"
@@ -211,40 +195,39 @@
                 <p class="pic-author">
                   Photo by Mark Fletcher-Brown on Unsplash
                 </p>
-              </div>
-            </div>
-          </div>
-          <p class="slogan">
-            <span class="colortext-primary">
+              </li>
+            </ul>
+            <p class="slogan"><span class="colortext-primary">
               Приєднуйся. Отримуй переваги. Масштабуй бізнес
-            </span>
-          </p>
+              </span>
+            </p>
+          </div>
 
-          <h2 class="title invisible">постачання електричної енергії</h2>
+          <h2 class="title visually-hidden">постачання електричної енергії</h2>
 
-          <div class="container">
-            <div class="row">
-              <div class="column">
-                <p class="about-us-next__txt">
+          <div class="about-us__container last">
+             <ul class="about-us__list">
+              <li class="about-us__list-item"> 
+                <p class="about-us__txt">
                   Постачання (продаж) електричної енергії здійснюємо за
                   <span class="colortext-secondary">вільними цінами</span>.
                   Економічне обґрунтування ціни та алгоритм розрахунку фіксуємо
                   в комерційній пропозиції до договору з постачання.
                 </p>
-                <p class="about-us-next__txt">
+                <p class="about-us__txt">
                   Умови співпраці обговорюємо
                   <span class="colortext-secondary">індивідуально</span>
                   до кожного споживача з огляду на галузь та сферу діяльності,
                   графік та обсяги споживання, умови оплати.
                 </p>
-                <p class="about-us-next__txt">
+                <p class="about-us__txt last">
                   Розглядаємо різні умови оплати: авансові платежі, планові
                   платежі, оплата по факту споживання. Графік платежів
                   обов’язково обговорюється та фіксується в договорі.
                 </p>
-              </div>
-              <div class="column two">
-                <p class="about-us-next__txt">
+              </li>
+              <li class="about-us__list-item">
+                <p class="about-us__txt">
                   <span class="colortext-secondary">
                     Ефективність діяльності
                   </span>
@@ -264,9 +247,8 @@
                 <p class="pic-author">
                   Photo by Vincent Tantardini on Unsplash
                 </p>
-              </div>
-            </div>           
-          </div>     
+              </li>
+             </ul>        
             <button type="button" class="button">Отримати консультацію</button>
         </div>
       </section>
@@ -277,57 +259,36 @@
               <div class="wrapper">
                 <h2 class="title">наші переваги</h2>
 
-                <div class="benefits__wrap">
-                  <div class="benefits__card">
-                    <div class="benefits__card-pic">
-                      <img
-                        src="./icons/icon_muscle.svg"
-                        alt="stability"
-                        class="benefits__card-muscule"
-                      />
-                      <p class="benefits__card-title">
-                        <span class="colortext-primary">стабільність</span>
+                <ul class="benefits__list">                
+                  <li class="benefits__card">
+                      <p class="benefits__card-title stability">
+                          <span class="colortext-primary">стабільність</span>
                       </p>
-                    </div>
-                    <p class="benefits__card-descr">
-                      Поважаємо та бережемо кожного, надаючи якісне постачання
-                    </p>
-                  </div>
+                      <p class="benefits__card-descr">
+                        Поважаємо та бережемо кожного, надаючи якісне постачання
+                      </p>   
+                  </li>
 
-                  <div class="benefits__card">
-                    <div class="benefits__card-pic">
-                      <img
-                        src="./icons/icon_newspaper-folding.svg"
-                        alt="flexibility"
-                        class="benefits__card-muscule"
-                      />
-                      <p class="benefits__card-title">
+                  <li class="benefits__card">
+                      <p class="benefits__card-title flexibility">
                         <span class="colortext-primary"> гнучкість </span>
                       </p>
-                    </div>
-                    <p class="benefits__card-descr">
+                      <p class="benefits__card-descr">
                       Здійснюємо уточнення графіків споживання та умов оплати за
                       потреби клієнта
-                    </p>
-                  </div>
+                      </p>
+                  </li>
 
-                  <div class="benefits__card">
-                    <div class="benefits__card-pic">
-                      <img
-                        src="./icons/icon_user.svg"
-                        alt="support"
-                        class="benefits__card-muscule"
-                      />
-                      <p class="benefits__card-title">
+                  <li class="benefits__card">
+                      <p class="benefits__card-title support">
                         <span class="colortext-primary"> підтримка </span>
                       </p>
-                    </div>
-                    <p class="benefits__card-descr">
+                      <p class="benefits__card-descr">
                       Надаємо консультаційні послуги, юридичний супровід, аналіз
                       тарифів
-                    </p>
-                  </div>
-              </div>
+                      </p>
+                  </li>
+              </ul>
       </section>
       <!--Benefits end-->
     </main>
@@ -335,7 +296,7 @@
     <!-- Footer start -->
     <footer class="footer">
       <div class="wrapper">
-        <h2 class="title invisible">контакти</h2>
+        <h2 class="title visually-hidden">контакти</h2>
         <!-- logo nav -->
         <div class="footer__nav">
           <div class="footer__nav-logo">  
