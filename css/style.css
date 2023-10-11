@@ -43,10 +43,6 @@ address {
     font-style: normal;
 }
 
-a:visited {
-    color: var(--primary-color);
-}
-
 img {
     display: block;
 }
@@ -282,7 +278,8 @@ section {
 
 .benefits {
     background-size: cover;
-    margin-bottom: 164px;
+    /* margin-bottom: 164px; */
+    background-color: whitesmoke;
 }
 
 .benefits__list {
@@ -296,7 +293,7 @@ section {
     padding-right: 12px;
     padding-bottom: 24px;
     padding-left: 12px;
-    background-color: whitesmoke;
+    background-color: white;
     border: 1px solid transparent;
     border-radius: 15px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
@@ -337,6 +334,10 @@ section {
 
 
 /* Footer style start */
+.footer {
+    padding-top: 48px;
+    padding-bottom: 15px;
+}
 
 .footer__nav {
     display: flex;
@@ -406,11 +407,11 @@ section {
 
 .footer__all-right-reserved {
     text-align: center;
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
 }
 
 .customer.footer {
-    background-color: rgba(255, 176, 144, 0.1);
+    background-color: var(--background-color);
     padding-top: 20px;
 }
 
@@ -444,7 +445,7 @@ section {
     padding-bottom: 16px;
     padding-left: 12px;
     margin-bottom: 24px;
-    border-radius: 5px;
+
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -465,17 +466,21 @@ section {
     font-size: 24px;
 }
 
-.link-get-more {
+.get-more-link {
     padding-top: 16px;
     padding-bottom: 16px;
+    color: var(--primary-color);
     font-size: 20px;
     font-weight: 700;
 }
 
-.link-get-more:hover,
-.link-get-more:focus {
+.get-more-link:hover,
+.get-more-link:focus {
     color: var(--secondary-color);
 }
+
+
+/* Корисні посилання та актуальні тарифи */
 
 .customer.law {
     color: var(--text-color);
@@ -486,23 +491,52 @@ section {
     background-size: cover;
 }
 
+.customer.law .wrapper {
+    padding-top: 28px;
+    padding-left: 48px;
+    padding-bottom: 28px;
+    padding-right: 48px;
+    line-height: 1.35;
+    box-shadow: 2px 4px 30px rgba(90, 148, 144, 0.15);
+    background-color: #FEFEFE;
+}
+
+.customer-txt {
+    margin-bottom: 18px;
+}
+
+.customer.law .accent {
+    font-weight: 700;
+}
+
+.customer-txt .accent-slogan {
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
 .law-item {
     margin-bottom: 24px;
 }
 
 .customer__law-list {
+    margin-top: 36px;
     margin-bottom: 94px;
 }
 
-/* Customer Tarif styles start */
-
-.tarif {
-    padding-top: 220px;
+.customer .law-link {
     color: var(--text-color);
-    font-size: 24px;
 }
 
-.tarif-item {
+.customer .law-link:hover,
+.customer .law-link:focus {
+    color: var(--primary-color);
+}
+
+.customer .tarif-list {
+    margin-top: 36px;
+}
+
+.customer .tarif-item {
     margin-bottom: 24px;
 }
 
@@ -555,7 +589,7 @@ section {
 .find-us {
 
     padding-top: 220px;
-    padding-bottom: 60px;
+    background-color: whitesmoke;
     /* background-size: cover; */
 }
 
