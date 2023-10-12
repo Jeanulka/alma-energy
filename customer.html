@@ -36,7 +36,7 @@
   </head>
   <body>
     <!--Header start-->
-    <header class="header">
+    <header class="header not-fixed">
       <div class="wrapper">
         <div class="header__wrapper">
           <nav class="header__nav">
@@ -114,17 +114,36 @@
               <li class="customer-information-list-item">
                 <h2 class="customer-information-title">Корисні посилання</h2>
                 <p class="customer-information-txt">
-                  Як при постачанні так і при споживання електричної енергії
-                  дуже важливо дотримуватись норм та положень законодавства в
-                  сфері енергетики.
-                </p>
-                <a
+               <a
                   href="#customerlawinfo"
                   class="get-more-link e"
                   aria-label="Посилання на законодавчі акти"
                 >
-                  Дізнатись більше...
+                  Нормативні та законодавчі акти
                 </a>
+                </p>
+               <p class="customer-information-txt"><a
+                  href="#actualtarif"
+                  class="get-more-link e"
+                  aria-label="Посилання на законодавчі акти"
+                >
+                  Актуальні тарифи та ціни
+                </a></p>
+                <p class="customer-information-txt"><a
+                  href="#electrosafe"
+                  class="get-more-link e"
+                  aria-label="Посилання на законодавчі акти"
+                >
+                  Правила елекробезпеки
+                </a></p>
+                <p class="customer-information-txt"><a
+                  href="#message"
+                  class="get-more-link e"
+                  aria-label="Посилання на законодавчі акти"
+                >
+                 Повідомлення про загрозу електробезпеки
+                </a></p>              
+
               </li>
               <!-- <li class="customer-information-list-item">
                 <h2 class="customer-information-title">Актуальні тарифи</h2>
@@ -203,7 +222,7 @@
       <section class="customer law" id="customerlawinfo">
         <div class="wrapper">
           <h2 class="title">
-            Корисні посилання на законодавчі та нормативні акти, які регулюють
+            законодавчі та нормативні акти, які регулюють
             відносини в сфері енергетики
           </h2>
 
@@ -225,6 +244,34 @@
           </p>
 
           <ul class="customer__law-list">
+            <li class="law-item">
+              <a
+                href="https://zakon.rada.gov.ua/laws/show/1540-19#Text"
+                class="law-link"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Закон України «Про Національну комісію, що здійснює державне регулювання у сферах енергетики та комунальних послуг»</a
+              >
+            </li>
+            <li class="law-item">
+              <a
+                href="https://zakon.rada.gov.ua/laws/show/v1469874-17#Text"
+                class="law-link"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Постанова НКРЕКП №1469 від 27.12.2017 року «Про затвердження Ліцензійних умов провадження господарської діяльності з постачання електричної енергії споживачу»</a
+              >
+            </li>
+            <li class="law-item">
+              <a
+                href="https://zakon.rada.gov.ua/laws/show/v1469874-17#Text"
+                class="law-link"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Закон України «Про особливості доступу до інформації у сферах постачання електричної енергії, природного газу, теплопостачання, централізованого постачання гарячої води, централізованого питного водопостачання та водовідведення»</a
+              >
+            </li>
+
             <li class="law-item">
               <a
                 href="https://zakon.rada.gov.ua/laws/show/2019-19#Text"
@@ -314,61 +361,171 @@
             </li> -->
           </ul>
 
-          <h2 class="title">Актуальні тарифи та ціни</h2>
+          <div class="actual-tarif" id="actualtarif"> 
+            <h2 class="title">Актуальні тарифи та ціни</h2>
 
-          <p class="customer-txt" id="actualtarif">
-            <span class="accent"> Шановний споживач!</span>
-          </p>
-          <p class="customer-txt">
-            Тут ви можете знайти інформацію щодо актуальних тарифів на передачу
-            та розподіл електричної енергії, а також цін на ринку. За даними
-            посиланнями ви можете знайти тарифи та ціни, які лягають в основу
-            фінансових документів. А відтак - перевіряти суми в ваших рахунках,
-            актах, користуватися ними для розрахунку бюджетів, здійснення
-            прогнозу витрат на електроенергію вашої господарської діяльності.
-          </p>
-          <p class="customer-txt">
-            Ми завжди раді допомогти вам розібратися з розрахунками, цифрами та
-            показниками. Також ми будемо раді надати вам консультацію з
-            будь-яких економічних питань та здійснити аналітичні досліження для
-            вас. Не зволікайте з дзвінком та візитом до нас, адже
-            <span class="accent-slogan">наш час - ваші прибутки.</span>
-          </p>
+            <p class="customer-txt">
+              <span class="accent"> Шановний споживач!</span>
+            </p>
+            <p class="customer-txt">
+              Тут ви можете знайти інформацію щодо актуальних тарифів на передачу
+              та розподіл електричної енергії, а також цін на ринку. За даними
+              посиланнями ви можете знайти тарифи та ціни, які лягають в основу
+              фінансових документів. А відтак - перевіряти суми в ваших рахунках,
+              актах, користуватися ними для розрахунку бюджетів, здійснення
+              прогнозу витрат на електроенергію вашої господарської діяльності.
+            </p>
+            <p class="customer-txt">
+              Ми завжди раді допомогти вам розібратися з розрахунками, цифрами та
+              показниками. Також ми будемо раді надати вам консультацію з
+              будь-яких економічних питань та здійснити аналітичні досліження для
+              вас. Не зволікайте з дзвінком та візитом до нас, адже
+              <span class="accent-slogan">наш час - ваші прибутки.</span>
+            </p>
 
-          <ul class="tarif-list">
-            <li class="tarif-item">
-              <a
-                href="https://www.nerc.gov.ua/sferi-diyalnosti/elektroenergiya/promislovist/tarifi-na-elektroenergiyu-dlya-nepobutovih-spozhivachiv/tarif-na-poslugi-z-peredachi-elektrichnoyi-energiyi/tarif-na-poslugi-z-peredachi-elektrichnoyi-energiyi-shcho-diye-z-01-sichnya-2023-roku"
-                class="law-link"
-                target="_blank"
-                rel="noreferrer noopener"
-                >Тариф на послуги з
-                <span class="colortext-secondary">передачі</span></a
-              >
-            </li>
-            <li class="tarif-item">
-              <a
-                href="https://www.nerc.gov.ua/sferi-diyalnosti/elektroenergiya/promislovist/tarifi-na-elektroenergiyu-dlya-nepobutovih-spozhivachiv/tarifi-na-poslugi-z-rozpodilu-elektrichnoyi-energiyi/tarifi-na-poslugi-z-rozpodilu-elektrichnoyi-energiyi-shcho-diyut-z-01-lipnya-2023-roku"
-                class="law-link"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Тариф на послуги з
-                <span class="colortext-secondary">розподілу</span></a
-              >
-            </li>
-            <li class="tarif-item">
-              <a
-                href="https://www.oree.com.ua/index.php/pricectr"
-                class="law-link"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Погодинні <span class="colortext-secondary">ціни </span> на
-                ринку електроенергії</a
-              >
-            </li>
-          </ul>
+            <ul class="tarif-list">
+              <li class="tarif-item">
+                <a
+                  href="https://www.nerc.gov.ua/sferi-diyalnosti/elektroenergiya/promislovist/tarifi-na-elektroenergiyu-dlya-nepobutovih-spozhivachiv/tarif-na-poslugi-z-peredachi-elektrichnoyi-energiyi/tarif-na-poslugi-z-peredachi-elektrichnoyi-energiyi-shcho-diye-z-01-sichnya-2023-roku"
+                  class="law-link"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Тариф на послуги з
+                  <span class="colortext-secondary">передачі</span></a
+                >
+              </li>
+              <li class="tarif-item">
+                <a
+                  href="https://www.nerc.gov.ua/sferi-diyalnosti/elektroenergiya/promislovist/tarifi-na-elektroenergiyu-dlya-nepobutovih-spozhivachiv/tarifi-na-poslugi-z-rozpodilu-elektrichnoyi-energiyi/tarifi-na-poslugi-z-rozpodilu-elektrichnoyi-energiyi-shcho-diyut-z-01-lipnya-2023-roku"
+                  class="law-link"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Тариф на послуги з
+                  <span class="colortext-secondary">розподілу</span></a
+                >
+              </li>
+              <li class="tarif-item">
+                <a
+                  href="https://www.oree.com.ua/index.php/pricectr"
+                  class="law-link"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Погодинні <span class="colortext-secondary">ціни </span> на
+                  ринку електроенергії</a
+                >
+              </li>
+            </ul>
+          </div>
+          </div>
+      </section>
+
+      <section class="customer electrosafe" id="electrosafe">
+        <div class="wrapper">
+          <div class="electrosafe-info"> 
+            <h2 class="title" >Правила електробезпеки</h2>       
+              <p class="customer-txt" >
+              <span class="accent"> Шановний споживач!</span>
+              </p>    
+              <p class="customer-txt">
+              Найважливішою вимогою електробезпеки в особистому господарстві громадян є справний стан ізоляції побутових електромереж і електроприймачів. 
+              В домашньому господарстві застосовуються телевізори, пральні машини, електроінструмент, електроплити, праски тощо, які живляться від мережі 220 В і яку помилково вважають безпечною. Невміле або необережне застосування вказаної побутової електротехніки несе загрозу здоров’ю і життю людей та може привести до електротравми або нещасного випадку.
+              Виявити електричний струм людина не може. </p>
+              <p class="customer-txt">
+              Підступна особливість електричної енергії полягає в тому, що вона не видима, не має запаху та кольору. Електричний струм вражає раптово, коли людина потрапляє в коло проходження струму, тобто коли людина з однієї сторони доторкається неізольованого проводу, металевого корпусу електроприладу з несправною ізоляцією або металевого предмета, який знаходиться під напругою, а з іншого боку – землі, заземлених предметів, труб тощо. Враження електричним струмом може настати і через інші провідники, при наближенні на недопустимо близьку, небезпечну відстань до проводу (шини РП) діючої електроустановки, повітряної лінії (ПЛ).Небезпека ураження в таких випадках значно зростає в сиру погоду.
+              Електротравма може виникнути при потраплянні під «крокову напругу», яка виникає при обриві і падінні на землю проводів ПЛ. </p>
+              <p class="customer-txt">  Ступінь небезпеки враження електричним струмом в багатьох випадках залежить від характеру приміщень, де знаходиться людина.
+              До приміщень з підвищенню небезпекою і особливо небезпечні по відношенню враження електричним струмом відносяться балкони, ванні кімнати, кухні, підвали, жилі приміщення із земляною підлогою, бані, металеві гаражі, парники, приміщення для худоби.
+              </p>
+              <p class="customer-txt"> <b>Якщо людина потрапила під напругу</b>, необхідно негайно вимкнути електроприлад чи електроустановку. </p>  
+              <p>Це можна зробити як за допомогою вимикача чи рубильника, так і перерубавши дріт сокирою чи лопатою з сухим дерев’яним держаком. Інший варіант – відтягти постраждалого з небезпечної зони за допомогою сухої мотузки, палиці, дошки тощо.  </p>
+              <p class="customer-txt"> У випадку відсутності згаданих предметів, людину можна витягати за одяг (якщо він сухий і відстає від тіла), наприклад, за поли піджака чи куртки, уникаючи при цьому контактів з металевими елементами одежі та відкрити ділянками тіла потерпілого) та невідкладно викликати лікаря.
+              </p>
+              <p class="customer-txt">У разі неможливості швидкого вимкнення електроустановки необхідно вжити заходів до відділення потерпілого від струмоведучих частин, до яких він торкається. При цьому в будь-яких випадках той, хто надає допомогу, не повинен доторкатися до потерпілого та до струмоведучих частин без належних засобів захисту. Він повинен слідкувати за тим, щоб не потрапити під дію крокової.
+              </p>
+              <p class="customer-txt">При звільненні від дії електричного струму і наданні першої допомоги потерпілому дорога кожна хвилина.</p>
+               
+              <p class="customer-txt"> У випадку виникнення загрози електробезпеці <b> ТЕРМІНОВО </b>
+               телефонуйте оператору системи розподілу. Розгляд такого повідомлення буде здійснено у порядку, визначеному відповідним оператором системи розподілу.
+              </p> 
+            
+              <ol class="electrosafe-list">Щоб уникнути смертельних електротравм необхідно знати наступні <b> ПРАВИЛА ЕЛЕКТРОБЕЗПЕКИ </b> і дотримуватись їх:
+                <li class="electrosafe-item">Не наближатись до обірваних проводів ближче 8 метрів;</li>
+                <li class="electrosafe-item">Не залазити на опори повітряних ліній електропередач, тим більше намагатись зняти електропровід;</li>
+                <li class="electrosafe-item">Не відчиняти двері та проникати в трансформаторні підстанції;</li>
+                <li class="electrosafe-item">Не дозволяти дітям залазити на дерева, що ростуть під проводами ліній електропередач;</li>
+                <li class="electrosafe-item">Не зводити будь-які будови, складати дрова, солому тощо, розпалювати багаття під проводами електроліній і повітряними вводами будинків;</li>
+                <li class="electrosafe-item">Не кидати дріт або будь-які інші предмети на проводи повітряних ліній електропередач;</li>
+                <li class="electrosafe-item">Не встановлювати металеві стоянки для телевізійних антен поблизу ліній електропередач;</li>
+                <li class="electrosafe-item">Не розташовувати ігрові майданчики, а також проводити ігри під повітряними лініями, запускати повітряних зміїв поблизу повітряних ліній та гратися біля електричних установок;</li>
+                <li class="electrosafe-item">Користуватись у вологих приміщеннях переносними лампами і електроприладами напругою не вище 36 В;</li>
+                <li class="electrosafe-item">Не заповнювати водою з водопровідного крану ввімкнені в електромережу чайники, кавоварки, оскільки при одночасному дотику до увімкненого приладу і водопровідного крану людина може бути уражена електрострумом;</li>
+                <li class="electrosafe-item">Не замінювати електролампи без їх вимкнення, не витирати вологою ганчіркою електричні проводи, штепсельні розетки, вимикачі, інші електроприлади, увімкнені в електромережу;</li>
+                <li class="electrosafe-item">Не виносити на подвір’я увімкнені електричні прилади, тому що у разі пошкодження ізоляції людина, яка стоїть на землі і торкається будь-якої металевої частини такого приладу може отримати електротравму;</li>
+                <li class="electrosafe-item"> Не допускайте до монтажу нових чи ремонтуванню наявних електроустановок некваліфікованих осіб. Недбало виконані ремонтні роботи можуть привести до травмування людей, які користуються даними електроустановками;</li>
+                <li class="electrosafe-item">Переносний електроінструмент – джерело підвищеної небезпеки. Перш ніж використовувати електроінструмент, вивчіть вимоги Правил безпеки та інструкцію по експлуатації від виробника;</li>
+                <li class="electrosafe-item"> Пам’ятайте, що невміле встановлення радіо, телеантени, проведення різноманітних робіт поблизу повітряних ліній з наближенням до металевих частин ПЛ спричиняє електротравми;</li>
+                <li class="electrosafe-item">Користуватись у вологих приміщеннях переносними лампами і електроприладами напругою не вище 36 В;</li>
+                <li class="electrosafe-item">Не защемляйте електропроводи дверима, віконними рамами, не закріплюйте їх на цвяхах, не замальовуйте і не забілюйте, щоб уникнути пошкодження і передчасного висихання ізоляції електропроводів. Це призводить до пожеж, а при контакті з людьми до нещасних випадків;
+                </li>
+                <li  class="electrosafe-item">Не давати дітям бавитись із штепсельними розетками;</li>
+                <li class="electrosafe-item">Не підвішувати речі на проводи, вимикачі та розетки;</li>
+                <li class="electrosafe-item">Потрібно знати, що побутові електроприлади (чайники, праски, електроплитки тощо), а також переносні світильники (торшери, настільні лампи) напругою 220 В, призначені для користування в приміщеннях з непровідними для електроструму підлогами.
+                </li>
+              </ol>
+          </div>               
+
+          <div class="electrosafe-message" id="message"> 
+            <h2 class="title">Повідомлення про загрозу електробезпеки</h2>
+            <b>Увага!</b>  
+            <p class="customer-txt">
+            У разі загоряння електроприладів, електроустановок слід негайно відімкнути їх від електромережі, 
+            при необхідності викликати пожежну службу за телефоном <b>«101»</b>. 
+            </p>  
+            <p class="customer-txt">
+              <b>КОНТАКТИ ОПЕРАТОРІВ СИСТЕМИ РОЗПОДІЛУ</b> ДЛЯ ПОДАННЯ СПОЖИВАЧАМИ ПОВІДОМЛЕНЬ ПРО ЗАГРОЗУ ЕЛЕКТРОБЕЗПЕЦІ
+            </p>
+            <p class="customer-txt">ПрАТ "ЗАКАРПАТТЯОБЛЕНЕРГО"  кол-центр: 0 (800) 50 16 20</p> 
+            <p class="customer-txt">АТ "ВІННИЦЯОБЛЕНЕРГО"  кол-центр: 0 (800) 217 217</p> 
+            <p class="customer-txt"> ПрАТ "ВОЛИНЬОБЛЕНЕРГО"  кол-центр: 0(800) 21 01 31  </p> 
+            <p class="customer-txt">  АТ "ПРИКАРПАТТЯОБЛЕНЕРГО"  кол-центр: 0 (800) 50 40 20</p> 
+            <p class="customer-txt">  ПрАТ "ЛЬВІВОБЛЕНЕРГО"  кол-центр: 0 (800) 50 15 68</p> 
+            <p class="customer-txt">  АТ "МИКОЛАЇВОБЛЕНЕРГО"  кол-центр: 0 (800) 50 40 0</p> 
+            <p class="customer-txt">  ПрАТ "РІВНЕОБЛЕНЕРГО”  кол-центр: (0362) 69 42 98; (067) 620 44 11</p> 
+            <p class="customer-txt"> ВАТ "ТЕРНОПІЛЬОБЛЕНЕРГО"  (0352) 52 15 03, кол-центр: 0 (800) 50 90 40 </p> 
+            <p class="customer-txt"> ПАТ "ХМЕЛЬНИЦЬКОБЛЕНЕРГО" кол-центр:0 (800) 50 50 62; (0382) 75 52 00 </p> 
+            <p class="customer-txt"> АТ "ЧЕРНІГІВОБЛЕНЕРГО" 0 (462) 65 41 07, кол-центр: 0 (800) 210 310 </p> 
+            <p class="customer-txt"> ПрАТ “ДТЕК ПЕМ-ЕНЕРГОВУГІЛЛЯ” кол-центр: 38 (062)73 65 443, 38 (062)73 64 329 </p> 
+            <p class="customer-txt">  АТ “ПОЛТАВАОБЛЕНЕРГО” кол-центр: (0532) 510 910; 0800 305 035; 050 305 99 10</p> 
+            <p class="customer-txt"> ДПЕМ ПрАТ "АТОМСЕРВІС" 38(05136) 5 71 48, кол-центр: 8(05136) 5 50 71 </p> 
+            <p class="customer-txt"> ПрАТ "ДТЕК КИЇВСЬКІ РЕГІОНАЛЬНІ ЕЛЕКТРОМЕРЕЖІ"  38(044) 459 07 40, 38(067) 495 70 40; 38(099) 495-70 40  </p> 
+            <p class="customer-txt"> ПрАТ "КІРОВОГРАДОБЛЕНЕРГО" 0-800-501-148 (безкоштовно), 38 (0522) 35 6851; 38 (050) 488 80 63; 38 (067) 521 15 70</p> 
+            <p class="customer-txt">  АТ "ДТЕК ДНІПРОВСЬКІ ЕЛЕКТРОМЕРЕЖІ" 38 (056) 790 99 00, 38 (066) 790 99 00;  38 (067) 790 99 00</p> 
+            <p class="customer-txt"> АТ "УКРЗАЛІЗНИЦЯ" кол-центр: (044) 333 16 82</p> 
+            <p class="customer-txt">  НЕК "УКРЕНЕРГО"  044 238 38 25, кол-центр: (044) 238 37 00</p> 
+            <p class="customer-txt"> АТ "ЧЕРНІВЦІОБЛЕНЕРГО" (0372) 52 42 45, кол-центр: (0372) 58 49 80 </p>
+            <p class="customer-txt"> АТ “ДТЕК ОДЕСЬКІ ЕЛЕКТРОМЕРЕЖІ” кол-центр: 38 (048) 705 90 90; 38 (068) 750 90 90; </p> 
+            <p class="customer-txt"> ПрАТ "ДТЕК КИЇВСЬКІ ЕЛЕКТРОМЕРЕЖІ" 38 (044) 202 15 88, кол-центр: 38 (044) 202 1588; 38 (067) 210 1588; </p> 
+            <p class="customer-txt"> АТ “ЖИТОМИРОБЛЕНЕРГО”  кол-центр: (0412)55 92 82; 067 155 92 82; 095 655 92 82 </p> 
+            <p class="customer-txt">  ПАТ “ЧЕРКАСИОБЛЕНЕРГО”  кол-центр: (0472) 33 87 87; (093) 170 40 57; (050) 434 87 87;</p> 
+            <p class="customer-txt"> АТ ДТЕК “ДОНЕЦЬКІ ЕЛЕКТРОМЕРЕЖІ”  кол-центр: 38 (096) 450 0 473,38 (099) 450 0 473,38 (093) 450 0 473 </p> 
+            <p class="customer-txt"> ТОВ “ДТЕК ВИСОКОВОЛЬТНІ МЕРЕЖІ”  38 (0626) 41 24 81, кол-центр: 38 (0629) 40 93 32</p> 
+            <p class="customer-txt"> ПрАТ “ПЕЕМ “ЦЕК”  кол-центр: (067) 541 30 78; (050) 411 82 35</p> 
+            <p class="customer-txt"> ТОВ "НАФТОГАЗ ТЕПЛО"  38 (044) 537 00 43</p>
+            <p class="customer-txt"> АТ “ХЕРСОНОБЛЕНЕРГО”  38 (0552) 48 06 20; 38 (0552) 48 06 06; 0 (800) 500 629 </p> 
+            <p class="customer-txt"> АТ "ХАРКІВОБЛЕНЕРГО"  38(057)74 01 512; 38(057)73 12 486</p> 
+            <p class="customer-txt"> ПАТ “ЗАПОРІЖЖЯОБЛЕНЕРГО”  38(061)22 53 659; 38(061)22 53 669 </p>
+            <p class="customer-txt">  АТ "СУМИОБЛЕНЕРГО"  38(054)26 59 659;38(054)26 59 203; 38(054)26 59 433</p> 
+            <p class="customer-txt"> ТОВ"ЛУГАНСЬКЕ ЕНЕРГЕТИЧНЕ ОБ'ЄДНАННЯ"  38(064)23 51 459; 38(064)23 32 995 </p> 
+          </div>   
+      
+
+
+       
+
+
+
         </div>
       </section>
 
@@ -397,14 +554,15 @@
                 </p>
                   <p class="customer-information-txt">
                   Небаланси - відшкодовуються
-                </p><a
+                </p>
+                <!-- <a
                   href="./we-are-working-on.html"
                   class="get-more-link"
                   rel="noreferrer noopener"
                   aria-label="Посилання на комерційну пропозицію"
                 >
                   Дізнатись більше...
-                </a>
+                </a> -->
               </li>
               <li class="customer-information-list-item">
                 <h2 class="customer-information-title">Аванс Стандарт</h2>
@@ -421,14 +579,15 @@
                 </p>
                 <p class="customer-information-txt">
                   Небаланси - відшкодовуються
-                </p><a
+                </p>
+                <!-- <a
                   href="./we-are-working-on.html"
                   class="get-more-link"
                   rel="noreferrer noopener"
                   aria-label="Посилання на комерційну пропозицію"
                 >
                   Дізнатись більше...
-                </a>
+                </a> -->
               </li>
               <li class="customer-information-list-item">
                 <h2 class="customer-information-title">Аванс Макс</h2>
@@ -445,14 +604,15 @@
                 </p>
                 <p class="customer-information-txt">
                   Небаланси - відшкодовуються
-                </p><a
+                </p>
+                <!-- <a
                   href="./we-are-working-on.html"
                   class="get-more-link"
                   rel="noreferrer noopener"
                   aria-label="Посилання на комерційну пропозицію"
                 >
                   Дізнатись більше...
-                </a>
+                </a> -->
               </li>
               <li class="customer-information-list-item">
                 <h2 class="customer-information-title">Декада Мін</h2>
@@ -471,14 +631,15 @@
                 </p>
                  <p class="customer-information-txt">
                   Небаланси - відшкодовуються
-                </p><a
+                </p>
+                <!-- <a
                   href="./we-are-working-on.html"
                   class="get-more-link"
                   rel="noreferrer noopener"
                   aria-label="Посилання на комерційну пропозиціюг"
                 >
                   Дізнатись більше...
-                </a>
+                </a> -->
               </li>
               <li class="customer-information-list-item">
                 <h2 class="customer-information-title">Декада Стандарт</h2>
@@ -496,14 +657,15 @@
                 </p>
                 <p class="customer-information-txt">
                   Небаланси - відшкодовуються
-                </p><a
+                </p>
+                <!-- <a
                   href="./we-are-working-on.html"
                   class="get-more-link"
                   rel="noreferrer noopener"
                   aria-label="Посилання на комерційну пропозицію"
                 >
                   Дізнатись більше...
-                </a>
+                </a> -->
               </li>
               <li class="customer-information-list-item">
                 <h2 class="customer-information-title">Декада Макс</h2>
@@ -522,14 +684,15 @@
                 </p>
                 <p class="customer-information-txt">
                   Небаланси - відшкодовуються
-                </p><a
+                </p>
+                <!-- <a
                   href="./we-are-working-on.html"
                   class="get-more-link"
                   rel="noreferrer noopener"
                   aria-label="Посилання на комерційну пропозицію"
                 >
                   Дізнатись більше...
-                </a>
+                </a> -->
               </li>
 
 <li class="customer-information-list-item">
@@ -551,14 +714,15 @@
                 </p>
                  <p class="customer-information-txt">
                   Небаланси - відшкодовуються
-                </p><a
+                </p>
+                <!-- <a
                   href="./we-are-working-on.html"
                   class="get-more-link"
                   rel="noreferrer noopener"
                   aria-label="Посилання на комерційну пропозиціюг"
                 >
                   Дізнатись більше...
-                </a>
+                </a> -->
               </li>
               <li class="customer-information-list-item">
                 <h2 class="customer-information-title">Факт Стандарт</h2>
@@ -580,14 +744,15 @@
                 </p>
                 <p class="customer-information-txt">
                   Небаланси - відшкодовуються
-                </p><a
+                </p>
+                <!-- <a
                   href="./we-are-working-on.html"
                   class="get-more-link"
                   rel="noreferrer noopener"
                   aria-label="Посилання на комерційну пропозицію"
                 >
                   Дізнатись більше...
-                </a>
+                </a> -->
               </li>
               <li class="customer-information-list-item">
                 <h2 class="customer-information-title">Факт Макс</h2>
@@ -609,14 +774,15 @@
                 </p>
                 <p class="customer-information-txt">
                   Небаланси - відшкодовуються
-                </p><a
+                </p>
+                <!-- <a
                   href="./we-are-working-on.html"
                   class="get-more-link"
                   rel="noreferrer noopener"
                   aria-label="Посилання на комерційну пропозицію"
                 >
                   Дізнатись більше...
-                </a>
+                </a> -->
               </li>
 
 

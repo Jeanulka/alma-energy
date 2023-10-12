@@ -9,6 +9,22 @@
     --slogan-color: #2f5597;
 }
 
+.colortext-secondary {
+    color: #e1b090;
+    /* color */
+    font-weight: 700;
+    /* bold */
+}
+
+.colortext-primary {
+    font-weight: 700;
+    /* bold */
+    color: #2f5597;
+    /* color */
+    font-size: 36px;
+    /* size */
+}
+
 /* Основні стилі, також дивись в html розділ head>style */
 body {
     font-family: 'Arsenal', sans-serif;
@@ -118,6 +134,10 @@ section {
     left: 0;
     width: 100%;
     height: 166px;
+}
+
+.header.not-fixed {
+    position: relative;
 }
 
 .header__nav {
@@ -482,7 +502,8 @@ section {
 
 /* Корисні посилання та актуальні тарифи */
 
-.customer.law {
+.customer.law,
+.customer.electrosafe {
     color: var(--text-color);
     font-size: 24px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5));
@@ -491,7 +512,22 @@ section {
     background-size: cover;
 }
 
+.customer.law {
+    padding-bottom: 0;
+}
+
 .customer.law .wrapper {
+    padding-top: 28px;
+    padding-left: 48px;
+    padding-bottom: 28px;
+    padding-right: 48px;
+
+    line-height: 1.35;
+    box-shadow: 2px 4px 30px rgba(90, 148, 144, 0.15);
+    background-color: #FEFEFE;
+}
+
+.customer.electrosafe .wrapper {
     padding-top: 28px;
     padding-left: 48px;
     padding-bottom: 28px;
@@ -509,6 +545,10 @@ section {
     font-weight: 700;
 }
 
+.customer.electrosafe .accent {
+    font-weight: 700;
+}
+
 .customer-txt .accent-slogan {
     font-weight: 700;
     color: var(--secondary-color);
@@ -516,6 +556,7 @@ section {
 
 .law-item {
     margin-bottom: 24px;
+    color: var(--primary-color);
 }
 
 .customer__law-list {
@@ -529,7 +570,7 @@ section {
 
 .customer .law-link:hover,
 .customer .law-link:focus {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .customer .tarif-list {
@@ -538,7 +579,24 @@ section {
 
 .customer .tarif-item {
     margin-bottom: 24px;
+    color: var(--primary-color);
 }
+
+.actual-tarif,
+.electrosafe-message {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.electrosafe-list {
+    margin-top: 60px;
+}
+
+.electrosafe-item {
+    padding-left: 10px;
+    list-style: inside;
+}
+
 
 
 /* Commercial proposal styles start*/
@@ -605,10 +663,145 @@ section {
 
 /* Find-us page styles end */
 
+.humburger {
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    display: none;
+}
 
-/* 
+.humburger-top,
+.humburger-middle,
+.humburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
 
-@media screen and (max-width: 1300px) 
-.main {
-    padding:
-} */
+    width: 24px;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+.humburger-middle {
+    transform: translateY(8px)
+}
+
+.humburger-bottom {
+    transform: translateY(16px)
+}
+
+@media (max-width: 1300px) {
+    img {
+        max-width: 100%;
+    }
+
+    .header__list-item,
+    .header__link {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1070px) {
+    section {
+        padding-top: 44px;
+        padding-bottom: 44px;
+    }
+
+    p,
+    .link {
+        font-size: 24px;
+    }
+
+    .slogan,
+    .about-us__subtitel,
+    .colortext-primary,
+    .intro__slogan {
+        font-size: 24px;
+    }
+
+    .footer__all-right-reserved {
+        font-size: 12px;
+    }
+
+    .intro__title {
+        font-size: 100px;
+    }
+
+    .intro__subtitle-1 {
+        font-size: 16px;
+    }
+
+    .benefits__card-title::before {
+        margin-right: 24px;
+    }
+
+    .about-us__container {
+        margin-bottom: 48px;
+    }
+
+    .about-us__container.last {
+        margin-bottom: 0;
+    }
+
+    .about-us__list:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 975px) {
+    .header__list {
+        display: none;
+    }
+
+    .humburger {
+        display: inline-block;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+    .about-us__txt {
+        margin-bottom: 24px;
+    }
+
+    p,
+    .link {
+        font-size: 22px;
+    }
+
+    .about-us__subtitel {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 770px) {
+
+
+    .intro__title {
+        font-size: 88px;
+    }
+
+    .header__logo {
+        max-width: 180px;
+    }
+
+    .logo-pic {
+        max-width: 180px;
+    }
+
+    p,
+    .link {
+        font-size: 20px;
+    }
+
+    .about-us__subtitel {
+        font-size: 20px;
+    }
+
+}
