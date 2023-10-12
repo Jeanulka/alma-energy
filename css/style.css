@@ -609,6 +609,28 @@ section {
     background-size: cover;
 }
 
+.commercial.proposal .docs {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding: 36px;
+}
+
+.commercial.proposal .docs-txt {
+    margin-bottom: 18px;
+    font-size: 24px;
+}
+
+.commercial .link {
+    color: var(--primary-color);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.commercial .link:hover,
+.commercial .link:focus {
+    color: var(--secondary-color);
+}
+
 /* Working-on styles start */
 
 .working-on {
